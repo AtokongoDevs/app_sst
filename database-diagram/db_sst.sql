@@ -20,8 +20,8 @@ CREATE TABLE detalle_usuario(
 	fecha_creacion DATE NOT NULL,
 	fecha_actualizacion DATETIME NULL,
 	id_empresa VARCHAR(100) NOT NULL,
-	PRIMARY KEY (id)
-	FOREIGN KEY (id_usuario) REFERENCES usuario(id)
+	PRIMARY KEY (id),
+	FOREIGN KEY (id_usuario) REFERENCES usuario(id),
 	FOREIGN KEY (id_empresa) REFERENCES empresa(id)
 );
 	
