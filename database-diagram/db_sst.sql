@@ -14,9 +14,9 @@ CREATE TABLE usuario(
 CREATE TABLE detalle_usuario(
 	id INT NOT NULL AUTO_INCREMENT,
 	id_usuario VARCHAR(100) NOT NULL,
-	nombre VARCHAR(100) NOT NULL,
-	apellido VARCHAR(100) NOT NULL,
-	cargo VARCHAR(100) NOT NULL,
+	nombre VARCHAR(100) NULL,
+	apellido VARCHAR(100) NULL,
+	cargo VARCHAR(100) NULL,
 	fecha_creacion DATE NOT NULL,
 	fecha_actualizacion DATETIME NULL,
 	id_empresa VARCHAR(100) NOT NULL,
@@ -27,9 +27,9 @@ CREATE TABLE detalle_usuario(
 	
 CREATE TABLE empresa(
 	id INT NOT NULL AUTO_INCREMENT,
-	razon_social VARCHAR(45) NOT NULL,
-	ruc VARCHAR(45) NOT NULL,
-	direccion_fiscal VARCHAR(100) NOT NULL,
+	razon_social VARCHAR(45) NULL,
+	ruc VARCHAR(45) NULL,
+	direccion_fiscal VARCHAR(100) NULL,
 	fecha_creacion DATE NOT NULL,
 	nombre_comercial VARCHAR(100) NULL,
 	PRIMARY KEY (id)
